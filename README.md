@@ -33,8 +33,14 @@ The systems were evaluated using 8 different metrics, including ***P@1, MAP and 
 ## Results
 The evaluation demonstrated that while lexical models are robust, neural re-ranking provides a significant edge in semantic understanding.
 
+*Results E1:*
+<img width="956" height="210" alt="image" src="https://github.com/user-attachments/assets/2db08c18-d021-4ec8-92c7-6b4cadc0026f" />
 
-**Key insights:** transitioning from raw OCR to clean text improved performance by ~ 32%. The neural cross-encoder achieved the highest precision (P@1: 0.678), successfully identifying the correct answer even when keyword overlap was minimal.
+*Results E2:*
+<img width="967" height="217" alt="image" src="https://github.com/user-attachments/assets/771e84c0-ed9a-4e54-b8af-f34bd838beeb" />
+
+
+**Key insights:** transitioning from raw OCR to clean text improved performance by ~ 32%. The neural cross-encoder achieved the highest precision (P@1:  0.678), successfully identifying the correct answer even when keyword overlap was minimal.
 
 
 ## Issues Encountered
